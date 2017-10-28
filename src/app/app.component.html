@@ -4,7 +4,8 @@
   </h1>
 
   <div *ngFor="let a of array; let i = index;" class="container">
-    <h4>Contact #{{i}} </h4>
+    <h4 *ngIf = 'i === 0'> Primary Contact </h4>
+    <h4 *ngIf = 'i > 0 '>Other Contact #{{i}} </h4>
     <app-container></app-container>
   </div>
 
