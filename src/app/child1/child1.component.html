@@ -1,0 +1,9 @@
+<div class="input-group">
+  <span class="input-group-addon">Name</span>
+  <input class="form-control" [formControl]="name">
+</div>
+
+<small>
+  value: {{ name.value | json }} /
+  status: {{ name.valid }}
+</small>
